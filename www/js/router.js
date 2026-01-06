@@ -22,6 +22,7 @@ const routes = {
 // Import controllers
 import { initOnboarding4 } from './controllers/onboarding4.js';
 import { initTutorSelection } from './controllers/tutor_selection.js';
+import { initSettings } from './controllers/settings.js';
 
 let cleanupFunction = null;
 
@@ -31,7 +32,6 @@ export async function navigateTo(path) {
         cleanupFunction();
         cleanupFunction = null;
     }
-    // Also clear body onclick just in case
     document.body.onclick = null;
 
     const viewName = routes[path];
@@ -57,8 +57,32 @@ export async function navigateTo(path) {
     }
 }
 
+function attachBottomNavListeners() {
+    const nav = document.querySelector('nav');
+    if (!nav) return;
+
+    // Home
+    const homeBtn = nav.querySelector('button:nth-child(1)');
+    if (homeBtn) homeBtn.onclick = () => navigateTo('/home');
+
+    // Lezioni (Study Plans?)
+    const lessonsBtn = nav.querySelector('button:nth-child(2)');
+    if (lessonsBtn) lessonsBtn.onclick = () => navigateTo('/study_plans');
+
+    // Progress
+    const progressBtn = nav.querySelector('button:nth-child(3)');
+    if (progressBtn) progressBtn.onclick = () => navigateTo('/progress');
+
+    // Profile (Settings?)
+    const profileBtn = nav.querySelector('button:nth-child(4)');
+    if (profileBtn) profileBtn.onclick = () => navigateTo('/settings');
+}
+
 function attachEventListeners(currentPath) {
     console.log('Attaching event listeners for', currentPath);
+
+    // Common bottom nav logic for pages that have it
+    attachBottomNavListeners();
 
     // Helper to find button by text content
     const findButtonByText = (text) => {
@@ -83,10 +107,6 @@ function attachEventListeners(currentPath) {
     }
 
     if (currentPath === '/onboarding/2') {
-        // Looking for the main CTA, assuming it's the last button or similar
-        // Or we can just attach to all buttons that aren't back buttons?
-        // Let's rely on the user clicking the *right* button in the test (which I fixed to be blindly the first one, which was bad).
-        // Let's improve this:
         const nextBtn = document.querySelector('button.bg-primary') || document.querySelector('button');
         if (nextBtn) nextBtn.onclick = () => navigateTo('/onboarding/3');
     }
@@ -105,16 +125,19 @@ function attachEventListeners(currentPath) {
     }
 
     if (currentPath === '/placement_test') {
-        const btn = document.querySelector('button');
-        if (btn) btn.onclick = () => navigateTo('/home');
+        const nextBtn = document.querySelector('.fixed.bottom-6 button');
+        if (nextBtn) nextBtn.onclick = () => navigateTo('/home');
+
+        const closeBtn = document.querySelector('button.rounded-full');
+        if (closeBtn) closeBtn.onclick = () => navigateTo('/onboarding/4');
     }
 
     if (currentPath === '/home') {
-        const playBtn = document.querySelector('.material-symbols-outlined[class*="play"]')?.closest('button');
-        if (playBtn) playBtn.onclick = () => navigateTo('/lesson/tutor');
-
-        const startBtn = findButtonByText('Start') || findButtonByText('Lesson');
+        const startBtn = findButtonByText('INIZIA LEZIONE');
         if (startBtn) startBtn.onclick = () => navigateTo('/lesson/tutor');
+
+        const micBtn = document.querySelector('button span.material-symbols-outlined[class*="mic"]')?.closest('button');
+        if (micBtn && !startBtn) micBtn.onclick = () => navigateTo('/lesson/tutor');
     }
 
     if (currentPath === '/lesson/tutor') {
@@ -135,6 +158,10 @@ function attachEventListeners(currentPath) {
     if (currentPath === '/lesson/recap') {
         const finishBtn = document.querySelector('button');
         if (finishBtn) finishBtn.onclick = () => navigateTo('/home');
+    }
+
+    if (currentPath === '/settings') {
+        initSettings();
     }
 
 }
