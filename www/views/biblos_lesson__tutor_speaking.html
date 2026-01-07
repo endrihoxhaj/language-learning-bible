@@ -1,0 +1,101 @@
+
+ Top Navigation & Status
+<header class="flex-none pt-2 px-4 pb-2 bg-background-cream z-10">
+<!-- Status Bar Placeholder -->
+<div class="h-6 w-full mb-2"></div>
+<div class="flex items-center justify-between">
+<button class="flex items-center justify-center w-10 h-10 rounded-full active:bg-black/5 text-text-subtle transition-colors">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+<h1 class="font-body font-bold text-[16px] text-text-dark text-center flex-1 truncate px-2">
+                Lesson: At the Parish Dinner
+            </h1>
+<button class="flex items-center justify-center w-10 h-10 rounded-full active:bg-black/5 text-text-subtle transition-colors">
+<span class="material-symbols-outlined text-[24px]">more_horiz</span>
+</button>
+</div>
+<!-- Progress Indicators -->
+<div class="flex w-full flex-row items-center justify-center gap-2 mt-3 pb-2">
+<div class="h-2.5 w-2.5 rounded-full bg-primary"></div>
+<div class="h-2.5 w-2.5 rounded-full bg-primary"></div>
+<div class="h-2.5 w-2.5 rounded-full bg-primary"></div>
+<div class="h-2.5 w-2.5 rounded-full bg-bg-inactive"></div>
+<div class="h-2.5 w-2.5 rounded-full bg-bg-inactive"></div>
+</div>
+</header>
+ Main Content Area: Scrollable if needed, but designed to fit
+<main class="flex-1 flex flex-col items-center justify-start relative w-full overflow-y-auto pb-32">
+<!-- Tutor Section -->
+<div class="relative w-full flex flex-col items-center mt-2 mb-4 shrink-0">
+<!-- Decorative Frame -->
+<div class="relative w-[280px] h-[280px] rounded-full p-3 wood-texture shadow-lg z-0">
+<!-- Vines/Roses decorations (Simplified with absolute divs for CSS representation) -->
+<div class="absolute -top-1 left-1/2 -translate-x-1/2 w-12 h-12 bg-rose-400 rounded-full opacity-80 blur-[1px]"></div>
+<div class="absolute top-10 -right-2 w-8 h-8 bg-green-700 rounded-full opacity-80 blur-[1px]"></div>
+<div class="absolute bottom-6 -left-2 w-8 h-8 bg-green-700 rounded-full opacity-80 blur-[1px]"></div>
+<!-- Inner Halo & Image Container -->
+<div class="w-full h-full rounded-full overflow-hidden border-4 border-[#C19A6B] relative halo-glow bg-blue-50">
+<!-- Background Sky -->
+<div class="absolute inset-0 bg-gradient-to-b from-blue-200 to-amber-50"></div>
+<!-- Tutor Image -->
+<div class="absolute inset-0 bg-contain bg-bottom bg-no-repeat" data-alt="Illustration of Saint Francis speaking with birds and a golden halo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBrQJNRspN_uf0CpKxLDry_ZFgKdzzxuayxC3LG0aa9QZDmYzjBxf7V2j9ONh1BJxeirfMYewsI2oR2j-X0eR5xJoVlFVTKknL2KjidOK9ZFJdl736_-m4lLdtt0qOKJSUSNsTxY6aVSs80XwUzbeqXuoQmvtnG0DmALcrksSKB8moy4LGqV4C9njTrS2FnkOth1wyhbGr3Uzrf-BGt7xCfRKn_VU3byXUEPNG7WuqzVAVUtpI2bYZjQdUIIvtnogcjeNtTYhOKuH0');">
+</div>
+</div>
+</div>
+</div>
+<!-- Dialogue Bubble -->
+<div class="w-full max-w-[90%] px-4 z-10 flex flex-col items-center">
+<!-- Speech Bubble -->
+<div class="bg-white rounded-2xl p-5 shadow-soft w-full relative">
+<!-- Pointer Triangle -->
+<div class="absolute -top-3 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[12px] border-l-transparent border-r-[12px] border-r-transparent border-b-[12px] border-b-white"></div>
+<p class="font-body text-[18px] text-text-dark leading-snug mb-4 text-center">
+                    Welcome to the parish dinner! Would you like some bread?
+                </p>
+<!-- Action Row -->
+<div class="flex items-center justify-center gap-4 border-t border-gray-100 pt-3">
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-50 text-text-subtle hover:bg-gray-100 transition-colors">
+<span class="material-symbols-outlined text-[24px]">volume_up</span>
+</button>
+<button class="px-4 py-2 rounded-full bg-blue-50 text-accent-blue font-bold text-sm flex items-center gap-2 hover:bg-blue-100 transition-colors">
+<span class="material-symbols-outlined text-[18px]">translate</span>
+                        Traduci
+                    </button>
+</div>
+</div>
+<!-- Hint Section -->
+<div class="mt-4 bg-accent-green-light rounded-xl p-3 flex items-center gap-3 w-full max-w-sm shadow-sm border border-primary/10">
+<div class="bg-white rounded-full p-1.5 flex-shrink-0 text-primary shadow-sm">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+</div>
+<p class="font-body text-[14px] text-text-subtle leading-tight">
+                    Rispondi con <span class="font-bold text-text-dark">'Yes, I would like...'</span>
+</p>
+</div>
+</div>
+</main>
+ Bottom Interaction Area
+<div class="fixed bottom-0 left-0 w-full bg-white rounded-t-[24px] shadow-[0_-4px_20px_rgba(0,0,0,0.05)] pt-6 pb-8 px-6 z-20 flex flex-col items-center">
+<div class="flex items-center justify-between w-full max-w-md">
+<!-- Keyboard Button -->
+<button class="flex items-center justify-center w-12 h-12 rounded-full bg-gray-50 border border-gray-100 text-text-subtle hover:bg-gray-100 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[24px]">keyboard</span>
+</button>
+<!-- Main Microphone Button -->
+<div class="flex flex-col items-center gap-2 -mt-4">
+<button class="flex items-center justify-center w-[88px] h-[88px] rounded-full bg-primary text-white shadow-glow hover:bg-primary-dark active:scale-95 transition-all group relative overflow-hidden">
+<span class="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity"></span>
+<span class="material-symbols-outlined text-[40px]">mic</span>
+</button>
+<span class="font-display text-[12px] text-text-caption font-medium tracking-wide mt-1">
+                    Tieni premuto per parlare
+                </span>
+</div>
+<!-- Hint/Help Button -->
+<button class="flex items-center justify-center w-12 h-12 rounded-full bg-gray-50 border border-gray-100 text-text-subtle hover:bg-gray-100 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[24px]">lightbulb</span>
+</button>
+</div>
+<!-- Safe area spacing for iOS home indicator -->
+<div class="h-4 w-full"></div>
+</div>
