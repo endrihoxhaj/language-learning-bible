@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>BIBLOS Language App</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Quicksand:wght@300..700&amp;family=Lexend:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7b9f5b",
+                        "primary-hover": "#6a8f4c",
+                        "biblos-cream": "#FDF6E3",
+                        "biblos-brown": "#5D4E37",
+                        "biblos-dark-brown": "#3D3426",
+                        "biblos-gray": "#7A6F5D",
+                        "biblos-orange": "#E57C23",
+                        "biblos-gold": "#C9A227",
+                        "biblos-text-light": "#7A6F5D",
+                        "background-light": "#FDF6E3",
+                        "background-dark": "#191c16",
+                        "text-dark": "#3D3426",
+                        "text-subtle": "#7A6F5D",
+                        "icon-dark": "#5D4E37",
+                        "accent-gold": "#C9A227",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"],
+                        "sans-rounded": ["Quicksand", "sans-serif"],
+                        "serif-display": ["Newsreader", "serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "1.25rem",
+                        "xl": "1.5rem",
+                        "2xl": "2rem",
+                        "full": "9999px"
+                    },
+                    backgroundImage: {
+                        'paper-pattern': "url('https://www.transparenttextures.com/patterns/cream-paper.png')",
+                    }
+                },
+            },
+        }
+    </script>
+
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+          font-variation-settings: 'FILL' 1;
+        }
+        /* Custom scrollbar hiding for cleaner mobile look */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        body {
+            /* Prevent rubber-banding on iOS */
+            overscroll-behavior-y: none;
+            user-select: none;
+            -webkit-user-select: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+        /* Page transition styles could go here */
+        #app {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+    </style>
+</head>
+<body class="bg-background-light text-biblos-dark-brown antialiased overflow-hidden">
+    <div id="app">
+        <!-- Views will be injected here -->
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/router.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
