@@ -1,0 +1,110 @@
+
+ Status Bar Spacer (simulated)
+<div class="h-12 w-full bg-biblos-cream shrink-0"></div>
+ Header
+<header class="flex items-center justify-between px-5 py-2 bg-biblos-cream shrink-0 z-20">
+<button class="flex items-center justify-center p-2 rounded-full hover:bg-black/5 transition-colors text-biblos-brown">
+<span class="material-symbols-outlined" style="font-size: 24px;">arrow_back</span>
+</button>
+<h2 class="text-lg font-bold text-biblos-brown tracking-tight">Scegli il Tutor</h2>
+<div class="w-10"></div> <!-- Spacer to center title -->
+</header>
+ Scrollable Content
+<main class="flex-1 overflow-y-auto no-scrollbar flex flex-col px-5 pt-2 pb-32">
+<!-- Intro Text -->
+<div class="py-4 mb-4">
+<h3 class="text-biblos-text text-center text-base font-normal leading-relaxed px-4">
+                Ogni tutor ha il suo stile.<br/>Chi vuoi come guida?
+            </h3>
+</div>
+<!-- Tutor Cards Stack -->
+<div class="flex flex-col gap-5">
+<!-- Card 1: Francesco (Selected) -->
+<div class="group relative w-full bg-white rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.06)] border-[3px] border-primary transition-all duration-300 transform scale-[1.01] active:scale-[0.99] cursor-pointer overflow-hidden">
+<!-- Selection Badge -->
+<div class="absolute top-0 right-0 bg-primary w-10 h-10 flex items-center justify-center rounded-bl-xl z-10 shadow-sm">
+<span class="material-symbols-outlined text-white font-bold" style="font-size: 24px;">check</span>
+</div>
+<div class="p-5 flex flex-row items-center gap-4 h-full">
+<!-- Illustration -->
+<div class="relative w-28 h-28 shrink-0 rounded-full bg-amber-50 border-4 border-amber-100/50 shadow-inner overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Warm circular illustration of Saint Francis with nature elements and soft light" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD2sTEQhx-UT6BEQp2VTJpt0S8QNfdQ1LAVRTKwNzOp5sZHowp8TE7l1npHwbCrc46RcrAd5TXF-IoHu_nf40cAAtLgCuy0JEu6juLJ46Lu7_vP6eDMyCsIU4RKTWACQMTpBweMEI1mSQ5OgcEV_xE9eIaEhIGlRhGE1tORlIFIRfdryWcHn_Fmr0sx7YLwcicxMinyqWOtgcfMKYea2BBAKhTBjyF0JiIyLO4lYMqOiKvfbfzj8o8h-hpsuEg9fs--j0ZvRsAIsRc'); filter: sepia(0.4) saturate(1.2) contrast(0.9);"></div>
+</div>
+<!-- Content -->
+<div class="flex flex-col justify-center gap-1.5 flex-1 min-w-0">
+<div class="flex flex-col">
+<h4 class="text-xl font-extrabold text-biblos-brown tracking-tight">Francesco</h4>
+<p class="text-sm font-medium text-biblos-text">Paziente e incoraggiante</p>
+</div>
+<div class="flex flex-wrap gap-2 mt-1">
+<span class="inline-flex items-center px-2 py-1 rounded-md bg-[#e6f4ea] text-[#137333] text-xs font-semibold border border-[#ceead6]">
+                                🌱 A1-B1
+                            </span>
+<span class="inline-flex items-center px-2 py-1 rounded-md bg-[#e8f0fe] text-[#1967d2] text-xs font-semibold border border-[#d2e3fc]">
+                                🐦 Gentile
+                            </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 2: Paolo (Unselected) -->
+<div class="group relative w-full bg-white rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.04)] border border-transparent hover:border-primary/30 transition-all duration-300 active:scale-[0.99] cursor-pointer overflow-hidden">
+<div class="p-5 flex flex-row items-center gap-4 h-full">
+<!-- Illustration -->
+<div class="relative w-28 h-28 shrink-0 rounded-full bg-orange-50 border-4 border-orange-100/50 shadow-inner overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Illustration of Saint Paul with scrolls and maps, adventurous style" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-mFWIo4e1CiMoWmqDT3r-sITEtLl-v-f8PdDscwaMCfTWAc-Fe_gaIGJf8DHaoQLE2UjdNWGU5Qvk9Ipizsc7s1a2XwapJSfo0PotuG09vC7Y8HjmTkXMTX6mHaBeImSGidO6YEQARepO5d3p7bJ1-6f2tpbSvVvZ1h_wYJyo8z2o-FLWOQjfmPCoFn5oc3c7WxCkSwJTlb7Gitioo6yT9We7c0RMsIu3kdBK2ezvxmMd5D6TuzNmsYdIKKb16z6i1XghviacJwY'); filter: sepia(0.3) contrast(0.9);"></div>
+</div>
+<!-- Content -->
+<div class="flex flex-col justify-center gap-1.5 flex-1 min-w-0">
+<div class="flex flex-col">
+<h4 class="text-xl font-bold text-biblos-brown/90 tracking-tight group-hover:text-primary transition-colors">Paolo</h4>
+<p class="text-sm font-medium text-biblos-text">Avventuroso e narrativo</p>
+</div>
+<div class="flex flex-wrap gap-2 mt-1">
+<span class="inline-flex items-center px-2 py-1 rounded-md bg-orange-50 text-orange-800 text-xs font-semibold border border-orange-100">
+                                🌿 B1-B2
+                            </span>
+<span class="inline-flex items-center px-2 py-1 rounded-md bg-amber-50 text-amber-800 text-xs font-semibold border border-amber-100">
+                                ✈️ Storie
+                            </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Card 3: Teresa (Coming Soon) -->
+<div class="relative w-full bg-white/60 rounded-xl border border-dashed border-gray-300 opacity-80 overflow-hidden">
+<!-- Coming Soon Overlay Ribbon -->
+<div class="absolute top-4 right-[-30px] rotate-45 bg-gray-200 text-gray-500 w-32 text-center py-1 text-[10px] font-bold tracking-widest shadow-sm z-10 select-none">
+                    SOON
+                </div>
+<div class="p-5 flex flex-row items-center gap-4 h-full opacity-60 grayscale-[0.5]">
+<!-- Illustration -->
+<div class="relative w-28 h-28 shrink-0 rounded-full bg-gray-100 border-4 border-gray-200 shadow-inner overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Illustration of Teresa figure, compassionate and simple" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAq_3WPR4OV0Gh9Dt5zjeuWm8lOifHUc55_tTuYYjSdUPevt4SiCNY_ttv49KwSy1iNMmgHrzceDbXrOgbzZx_ltwxenIpYbnA1FLDhIrdWmzYEIPKXkKG26yWYHNZnXxsIo-gL9YHPKYdMbVjysqanxzc-WqSj07yQ1sktvLQOBYyzUQYN0lWDN6C_vvh72jrSk24QPvj0swDak2zrRTvS_GKX6l1VjjWnHjNQvseUA1XgT2givBaaBzydfKvWDCJmo6VOGQa9rU8');"></div>
+</div>
+<!-- Content -->
+<div class="flex flex-col justify-center gap-1.5 flex-1 min-w-0">
+<div class="flex flex-col">
+<h4 class="text-xl font-bold text-gray-500 tracking-tight">Teresa</h4>
+<p class="text-sm font-medium text-gray-500">Diretta e pratica</p>
+</div>
+<div class="flex flex-wrap gap-2 mt-1">
+<span class="inline-flex items-center px-2 py-1 rounded-md bg-gray-100 text-gray-500 text-xs font-semibold border border-gray-200">
+                                🌳 B2-C1
+                            </span>
+<span class="inline-flex items-center px-2 py-1 rounded-md bg-gray-100 text-gray-500 text-xs font-semibold border border-gray-200">
+                                💪 Sfidante
+                            </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+ Fixed Footer Action
+<div class="fixed bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-biblos-cream via-biblos-cream to-transparent pt-10 z-30">
+<button class="w-full bg-primary hover:bg-[#20e06e] active:scale-[0.98] text-white font-bold text-lg py-4 rounded-xl shadow-lg shadow-primary/30 transition-all duration-200 flex items-center justify-center gap-2">
+            CONFERMA SCELTA
+            <span class="material-symbols-outlined text-[20px] font-bold">arrow_forward</span>
+</button>
+</div>
