@@ -1,0 +1,109 @@
+
+ Top App Bar
+<div class="sticky top-0 z-50 bg-background-light dark:bg-background-dark/95 backdrop-blur-sm px-4 py-4 pb-2">
+<div class="flex items-center justify-between h-11">
+<!-- Close Button -->
+<button class="text-biblos-dark dark:text-gray-200 flex items-center justify-center rounded-full hover:bg-black/5 transition-colors p-2 -ml-2">
+<span class="material-symbols-outlined !text-[28px]">close</span>
+</button>
+<!-- Title -->
+<h2 class="text-biblos-dark dark:text-gray-100 text-[17px] font-bold leading-tight text-center">Test di Livello</h2>
+<!-- Counter -->
+<div class="flex items-center justify-end min-w-[30px]">
+<p class="text-biblos-medium dark:text-gray-400 text-base font-bold">5/15</p>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="mt-4 h-1.5 w-full bg-[#E8E4DC] dark:bg-gray-700 rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500 ease-out" style="width: 33%"></div>
+</div>
+</div>
+ Main Content Area
+<main class="flex-1 flex flex-col w-full max-w-md mx-auto px-6 pb-6 pt-4">
+<!-- Question Section -->
+<div class="flex flex-col items-center justify-center space-y-6 mb-8">
+<!-- Large Audio Button -->
+<div class="flex flex-col items-center gap-2">
+<button class="relative group active:scale-95 transition-transform duration-200">
+<div class="w-16 h-16 bg-white dark:bg-gray-800 rounded-full shadow-sm border border-[#E8E4DC] dark:border-gray-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-biblos-dark dark:text-primary !text-[32px]">volume_up</span>
+</div>
+</button>
+<span class="text-biblos-medium dark:text-gray-400 text-sm font-medium">Ascolta</span>
+</div>
+<!-- Question Text Card -->
+<div class="w-full bg-white/50 dark:bg-gray-800/50 border border-card-border dark:border-gray-700 rounded-2xl p-6 text-center shadow-sm backdrop-blur-sm">
+<h1 class="text-biblos-text dark:text-gray-100 text-[22px] font-normal leading-snug">
+                    The priest is reading from the Bible.
+                </h1>
+<!-- Small replay trigger -->
+<button class="mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-primary !text-[18px]">volume_up</span>
+<span class="text-primary text-xs font-bold uppercase tracking-wide">Replay</span>
+</button>
+</div>
+<!-- Prompt -->
+<p class="text-biblos-medium dark:text-gray-400 text-base font-bold w-full text-left pt-2">
+                Cosa significa?
+            </p>
+</div>
+<!-- Answers Section -->
+<div class="flex flex-col gap-[10px] w-full">
+<!-- Option A -->
+<button class="group relative w-full bg-white dark:bg-gray-800 rounded-xl border-2 border-card-border dark:border-gray-700 hover:border-primary/50 dark:hover:border-primary/50 transition-all p-4 min-h-[64px] flex items-center text-left">
+<div class="flex items-center gap-4 w-full">
+<div class="flex-shrink-0 w-6 h-6 rounded-full border-2 border-[#E8E4DC] dark:border-gray-600 group-hover:border-primary/50"></div>
+<span class="text-biblos-text dark:text-gray-200 text-base font-medium leading-tight">Il prete sta leggendo dalla Bibbia</span>
+</div>
+</button>
+<!-- Option B -->
+<button class="group relative w-full bg-white dark:bg-gray-800 rounded-xl border-2 border-card-border dark:border-gray-700 hover:border-primary/50 dark:hover:border-primary/50 transition-all p-4 min-h-[64px] flex items-center text-left">
+<div class="flex items-center gap-4 w-full">
+<div class="flex-shrink-0 w-6 h-6 rounded-full border-2 border-[#E8E4DC] dark:border-gray-600 group-hover:border-primary/50"></div>
+<span class="text-biblos-text dark:text-gray-200 text-base font-medium leading-tight">Il pane sta lievitando dalla sera</span>
+</div>
+</button>
+<!-- Option C (SELECTED) -->
+<button class="relative w-full bg-primary/10 dark:bg-primary/20 rounded-xl border-2 border-primary transition-all p-4 min-h-[64px] flex items-center text-left shadow-sm">
+<div class="flex items-center gap-4 w-full">
+<div class="flex-shrink-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-white !text-[16px] font-bold">check</span>
+</div>
+<span class="text-biblos-dark dark:text-white text-base font-semibold leading-tight">Il pesce sta nuotando nel fiume</span>
+</div>
+</button>
+<!-- Option D -->
+<button class="group relative w-full bg-white dark:bg-gray-800 rounded-xl border-2 border-card-border dark:border-gray-700 hover:border-primary/50 dark:hover:border-primary/50 transition-all p-4 min-h-[64px] flex items-center text-left">
+<div class="flex items-center gap-4 w-full">
+<div class="flex-shrink-0 w-6 h-6 rounded-full border-2 border-[#E8E4DC] dark:border-gray-600 group-hover:border-primary/50"></div>
+<span class="text-biblos-text dark:text-gray-200 text-base font-medium leading-tight">Il prato sta fiorendo in primavera</span>
+</div>
+</button>
+</div>
+<!-- Footer / Mascot Section -->
+<div class="mt-auto pt-8 flex items-end justify-center pb-4 relative">
+<div class="flex items-center gap-3">
+<!-- Mascot Francis Avatar -->
+<div class="w-12 h-12 rounded-full bg-[#E8E4DC] overflow-hidden border-2 border-white shadow-sm flex-shrink-0 relative">
+<img alt="Friendly cartoon pug dog character named Francis smiling encouragingly" class="w-full h-full object-cover transform translate-y-1 scale-110" data-alt="Friendly cartoon pug dog character named Francis smiling encouragingly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo_R9nIMCb-KLruwbkx4parh1a4t8XnplGPg9s2Zg9euai1hgm1Lo9RdDM_WXAEaXLflHuj9bxugtmU9S5IXq7Xnp4vjZFX8HIQ7uVJQl4hU7O5e7pi_2ZEXCAyVl7cI7IIDvARhXFV_BscoxN7PJddM5WPBV4-QrShVGMA8SHf1co_ny77-tu8fCQpzj8zgimpqfynej48xfnILmPvsKnloH49JAYRuQKXjDbLh_hzGT3zPEFdKJUrKYBUPqoHs72BlzU7aoYg64"/>
+</div>
+<!-- Bubble -->
+<div class="bg-white dark:bg-gray-800 px-4 py-2 rounded-2xl rounded-bl-none shadow-sm border border-card-border dark:border-gray-700">
+<p class="text-biblos-medium dark:text-gray-400 text-sm font-medium">Prenditi il tuo tempo ☺️</p>
+</div>
+</div>
+</div>
+</main>
+ Check Button (FAB style but static at bottom for quiz usually)
+         Note: Context said "No bottom navigation", implying the interaction ends on selection or auto-advances.
+         However, often a "Check" button appears after selection.
+         I will include a subtle floating check button to complete the typical quiz UI pattern if user desires action,
+         or leave it purely selection based as requested.
+         Following the specific request "No bottom navigation", I will omit a tab bar.
+         I will add a primary action button as is standard for completing a step.
+
+<div class="fixed bottom-6 right-6 z-40">
+<button class="flex items-center justify-center w-14 h-14 bg-primary text-white rounded-2xl shadow-lg hover:bg-[#6a8a4d] transition-colors active:scale-95">
+<span class="material-symbols-outlined !text-[28px]">arrow_forward</span>
+</button>
+</div>
