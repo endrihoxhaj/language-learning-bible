@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>BIBLOS Language App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7b9f5b",
+                        "biblos-cream": "#FDF6E3",
+                        "biblos-brown": "#5D4E37",
+                        "biblos-dark-brown": "#3D3426",
+                        "biblos-gray": "#7A6F5D",
+                        "biblos-orange": "#E57C23",
+                        "background-light": "#FDF6E3",
+                        "background-dark": "#191c16",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "1.25rem", "xl": "1.5rem", "2xl": "2rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom scrollbar hiding for cleaner mobile look */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        body {
+            min-height: max(884px, 100dvh);
+            background-color: #FDF6E3; /* Default light background */
+        }
+        /* Basic transition for view switching */
+        #app {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-biblos-dark-brown antialiased selection:bg-primary/30">
+    <!-- The main application container -->
+    <div id="app"></div>
+
+    <!-- Scripts -->
+    <script src="js/lesson_controller.js"></script>
+    <script src="js/router.js"></script>
+</body>
+</html>
