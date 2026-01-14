@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>BIBLOS Language App</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7b9f5b",
+                        "primary-hover": "#6a8f4c",
+                        "biblos-cream": "#FDF6E3",
+                        "biblos-brown": "#5D4E37",
+                        "biblos-dark-brown": "#3D3426",
+                        "biblos-gray": "#7A6F5D",
+                        "biblos-orange": "#E57C23",
+                        "background-light": "#FDF6E3",
+                        "background-dark": "#191c16",
+                        "text-dark": "#3D3426",
+                        "text-subtle": "#7A6F5D",
+                        "icon-dark": "#5D4E37",
+                        "accent-gold": "#C9A227",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "1.25rem", "xl": "1.5rem", "2xl": "2rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom scrollbar hiding for cleaner mobile look */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        body {
+            /* Prevent bounce on iOS */
+            overscroll-behavior-y: none;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-biblos-dark-brown antialiased selection:bg-primary/30 h-screen w-full overflow-hidden">
+    <div id="app" class="h-full w-full"></div>
+
+    <script src="js/lesson_controller.js"></script>
+    <script src="js/router.js"></script>
+</body>
+</html>
