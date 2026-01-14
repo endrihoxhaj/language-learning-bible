@@ -1,0 +1,61 @@
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+<!-- Main Container -->
+<div class="relative flex h-[100dvh] w-full flex-col overflow-hidden bg-biblos-cream selection:bg-biblos-gold/30">
+<!-- Ambient Background Layers -->
+<!-- 1. Radial Gradient for depth (light center, slightly darker edges) -->
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_#fffef8_0%,_#FDF6E3_70%,_#f2ead6_100%)] pointer-events-none"></div>
+<!-- 2. Texture Overlay (Simulating aged paper) -->
+<div class="absolute inset-0 opacity-60 bg-paper-pattern pointer-events-none mix-blend-multiply bg-repeat z-0"></div>
+<!-- Central Content Wrapper -->
+<main class="relative z-10 flex flex-grow flex-col items-center justify-center px-6">
+<!-- Dove Illustration Area -->
+<!-- Using a container for the glow and the image -->
+<div class="relative mb-8 flex flex-col items-center justify-center">
+<!-- Golden Glow / Rays effect behind the dove -->
+<div class="absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full bg-biblos-gold/20 blur-2xl"></div>
+<div class="absolute left-1/2 top-1/2 h-24 w-24 -translate-x-1/2 -translate-y-1/2 rounded-full bg-yellow-200/30 blur-xl"></div>
+<!-- Dove Image Component -->
+<!-- Using mix-blend-multiply to integrate the white background of the image into the cream page -->
+<div class="relative h-[80px] w-[80px]">
+<img class="h-full w-full object-contain opacity-90 mix-blend-multiply grayscale-[0.3] contrast-125" data-alt="Watercolor illustration of a white dove in flight with olive branch, soft painterly style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAe2MfRm4pkZjqnX6DO9siAgw5674eLriK2EYuA0lJmg5Qw9lJP4NC-5j_P6NH3Z_SKb0n5mFr48r6RTYYIIDtsKHofdDM5LnLGn4Eom_QJeJ2RsJ7DtMa0r25ySJ_1LPsu-u1ItJpugYPpspszNSoYZ82tkeC3JoMZNPDmNw9h67Ep_YY0dKEbZEX4PPqb4_GIYmPG6oerOjKXtzSK88WkVtubmFr0Bi2Crjih4je-BIBZ6PbihGMCy-kCmSgXKKe-h5LwvPFx5_g"/>
+</div>
+</div>
+<!-- App Name: BIBLOS -->
+<!-- 48px font size, 8px letter spacing, heavy serif -->
+<h1 class="text-center font-display text-[48px] font-bold leading-none tracking-[8px] text-biblos-brown drop-shadow-sm ml-2">
+                BIBLOS
+            </h1>
+<!-- Decorative Line -->
+<!-- 80px wide, 1px height, Gold -->
+<div class="mt-5 mb-3 h-[1px] w-[80px] bg-biblos-gold"></div>
+<!-- Tagline -->
+<!-- Rounded sans-serif, 16px, italic -->
+<p class="font-sans-rounded text-[16px] italic text-biblos-text-light tracking-wide">
+                Learn with Faith
+            </p>
+</main>
+<!-- Footer / Loading Indicator -->
+<!-- Fixed at bottom, 40px padding -->
+<footer class="relative z-10 mb-[40px] flex w-full justify-center">
+<div class="flex flex-row items-center justify-center gap-2">
+<!-- Three static gold dots -->
+<div class="h-2 w-2 rounded-full bg-biblos-gold"></div>
+<div class="h-2 w-2 rounded-full bg-biblos-gold"></div>
+<div class="h-2 w-2 rounded-full bg-biblos-gold"></div>
+</div>
+</footer>
+</div>
