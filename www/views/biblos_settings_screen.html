@@ -1,0 +1,281 @@
+
+<div class="relative flex h-full min-h-screen w-full flex-col max-w-md mx-auto bg-biblos-cream dark:bg-background-dark">
+<!-- Status Bar Placeholder -->
+<div class="h-12 w-full bg-biblos-cream dark:bg-background-dark sticky top-0 z-20"></div>
+<!-- Top App Bar -->
+<header class="sticky top-12 z-10 flex items-center justify-between px-4 pb-4 pt-2 bg-biblos-cream dark:bg-background-dark">
+<button class="flex size-10 items-center justify-center rounded-full text-biblos-dark hover:bg-black/5 transition-colors">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+<h1 class="text-biblos-dark text-lg font-nunito font-bold leading-tight tracking-tight flex-1 text-center pr-10">Impostazioni</h1>
+</header>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col gap-6 px-4 pb-10">
+<!-- Section: Account -->
+<section>
+<h3 class="text-biblos-gray text-xs font-bold uppercase tracking-wider px-2 pb-2">Account</h3>
+<div class="flex flex-col bg-white dark:bg-[#1E2E24] rounded-xl shadow-soft overflow-hidden divide-y divide-gray-100 dark:divide-gray-800">
+<!-- Name -->
+<div class="flex items-center justify-between p-4 h-14 hover:bg-gray-50 dark:hover:bg-white/5 cursor-pointer transition-colors group">
+<div class="flex items-center gap-3 overflow-hidden">
+<div class="flex items-center justify-center size-8 rounded-lg bg-blue-50 text-blue-600 dark:bg-blue-900/30 dark:text-blue-300">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<span class="text-base font-normal truncate">Nome</span>
+</div>
+<div class="flex items-center gap-2 text-biblos-gray dark:text-gray-400">
+<span class="text-sm font-normal truncate max-w-[120px]">Marco Rossi</span>
+<span class="material-symbols-outlined text-[20px] text-gray-300">chevron_right</span>
+</div>
+</div>
+<!-- Email -->
+<div class="flex items-center justify-between p-4 h-14 hover:bg-gray-50 dark:hover:bg-white/5 cursor-pointer transition-colors group">
+<div class="flex items-center gap-3 overflow-hidden">
+<div class="flex items-center justify-center size-8 rounded-lg bg-orange-50 text-orange-600 dark:bg-orange-900/30 dark:text-orange-300">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<span class="text-base font-normal truncate">Email</span>
+</div>
+<div class="flex items-center gap-2 text-biblos-gray dark:text-gray-400">
+<span class="text-sm font-normal truncate max-w-[120px]">marco@email.com</span>
+<span class="material-symbols-outlined text-[20px] text-gray-300">chevron_right</span>
+</div>
+</div>
+<!-- Password -->
+<div class="flex items-center justify-between p-4 h-14 hover:bg-gray-50 dark:hover:bg-white/5 cursor-pointer transition-colors group">
+<div class="flex items-center gap-3 overflow-hidden">
+<div class="flex items-center justify-center size-8 rounded-lg bg-purple-50 text-purple-600 dark:bg-purple-900/30 dark:text-purple-300">
+<span class="material-symbols-outlined text-[20px]">key</span>
+</div>
+<span class="text-base font-normal truncate">Password</span>
+</div>
+<div class="flex items-center gap-2 text-biblos-gray dark:text-gray-400">
+<span class="text-sm font-normal tracking-widest">••••••••</span>
+<span class="material-symbols-outlined text-[20px] text-gray-300">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Apprendimento -->
+<section>
+<h3 class="text-biblos-gray text-xs font-bold uppercase tracking-wider px-2 pb-2">Apprendimento</h3>
+<div class="flex flex-col bg-white dark:bg-[#1E2E24] rounded-xl shadow-soft overflow-hidden divide-y divide-gray-100 dark:divide-gray-800">
+<!-- Lingua App -->
+<div class="flex items-center justify-between p-4 h-14 hover:bg-gray-50 dark:hover:bg-white/5 cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 rounded-lg bg-green-50 text-green-600 dark:bg-green-900/30 dark:text-green-300">
+<span class="material-symbols-outlined text-[20px]">language</span>
+</div>
+<span class="text-base font-normal">Lingua dell'app</span>
+</div>
+<div class="flex items-center gap-2 text-biblos-gray dark:text-gray-400">
+<span class="text-sm font-normal">Italiano 🇮🇹</span>
+<span class="material-symbols-outlined text-[20px] text-gray-300">chevron_right</span>
+</div>
+</div>
+<!-- Lingua Studio -->
+<div class="flex items-center justify-between p-4 h-14 hover:bg-gray-50 dark:hover:bg-white/5 cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 rounded-lg bg-teal-50 text-teal-600 dark:bg-teal-900/30 dark:text-teal-300">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+<span class="text-base font-normal">Lingua di studio</span>
+</div>
+<div class="flex items-center gap-2 text-biblos-gray dark:text-gray-400">
+<span class="text-sm font-normal">Inglese 🇬🇧</span>
+<span class="material-symbols-outlined text-[20px] text-gray-300">chevron_right</span>
+</div>
+</div>
+<!-- Obiettivo -->
+<div class="flex items-center justify-between p-4 h-14 hover:bg-gray-50 dark:hover:bg-white/5 cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 rounded-lg bg-amber-50 text-amber-600 dark:bg-amber-900/30 dark:text-amber-300">
+<span class="material-symbols-outlined text-[20px]">target</span>
+</div>
+<span class="text-base font-normal">Obiettivo giornaliero</span>
+</div>
+<div class="flex items-center gap-2 text-biblos-gray dark:text-gray-400">
+<span class="text-sm font-normal">15 minuti</span>
+<span class="material-symbols-outlined text-[20px] text-gray-300">chevron_right</span>
+</div>
+</div>
+<!-- Tutor -->
+<div class="flex items-center justify-between p-4 h-14 hover:bg-gray-50 dark:hover:bg-white/5 cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 rounded-lg bg-indigo-50 text-indigo-600 dark:bg-indigo-900/30 dark:text-indigo-300">
+<span class="material-symbols-outlined text-[20px]">face</span>
+</div>
+<span class="text-base font-normal">Tutor preferito</span>
+</div>
+<div class="flex items-center gap-2 text-biblos-gray dark:text-gray-400">
+<span class="text-sm font-normal">Francesco</span>
+<span class="material-symbols-outlined text-[20px] text-gray-300">chevron_right</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Notifiche -->
+<section>
+<h3 class="text-biblos-gray text-xs font-bold uppercase tracking-wider px-2 pb-2">Notifiche</h3>
+<div class="flex flex-col bg-white dark:bg-[#1E2E24] rounded-xl shadow-soft overflow-hidden divide-y divide-gray-100 dark:divide-gray-800">
+<!-- Promemoria Toggle -->
+<div class="flex items-center justify-between p-4 h-14">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 rounded-lg bg-rose-50 text-rose-600 dark:bg-rose-900/30 dark:text-rose-300">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+</div>
+<span class="text-base font-normal">Promemoria giornaliero</span>
+</div>
+<div class="relative inline-block w-11 h-6 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white border-4 border-transparent appearance-none cursor-pointer translate-x-0 checked:translate-x-full transition-transform duration-200 ease-in-out focus:ring-0 focus:ring-offset-0 outline-none" id="toggle-notif" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer checked:bg-primary transition-colors duration-200 ease-in-out" for="toggle-notif"></label>
+</div>
+</div>
+<!-- Orario -->
+<div class="flex items-center justify-between p-4 h-14 hover:bg-gray-50 dark:hover:bg-white/5 cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 rounded-lg bg-gray-50 text-gray-600 dark:bg-gray-800 dark:text-gray-300">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<span class="text-base font-normal">Orario promemoria</span>
+</div>
+<div class="flex items-center gap-2 text-biblos-gray dark:text-gray-400">
+<span class="text-sm font-normal bg-gray-100 dark:bg-black/20 px-2 py-1 rounded">09:00</span>
+</div>
+</div>
+<!-- Streak Toggle -->
+<div class="flex items-center justify-between p-4 h-14">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 rounded-lg bg-orange-50 text-orange-500 dark:bg-orange-900/30 dark:text-orange-300">
+<span class="material-symbols-outlined text-[20px]">local_fire_department</span>
+</div>
+<span class="text-base font-normal">Avvisi streak</span>
+</div>
+<div class="relative inline-block w-11 h-6 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white border-4 border-transparent appearance-none cursor-pointer translate-x-0 checked:translate-x-full transition-transform duration-200 ease-in-out focus:ring-0 focus:ring-offset-0 outline-none" id="toggle-streak" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer checked:bg-primary transition-colors duration-200 ease-in-out" for="toggle-streak"></label>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Audio -->
+<section>
+<h3 class="text-biblos-gray text-xs font-bold uppercase tracking-wider px-2 pb-2">Audio</h3>
+<div class="flex flex-col bg-white dark:bg-[#1E2E24] rounded-xl shadow-soft overflow-hidden divide-y divide-gray-100 dark:divide-gray-800">
+<!-- Speed -->
+<div class="flex items-center justify-between p-4 h-14 hover:bg-gray-50 dark:hover:bg-white/5 cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 rounded-lg bg-cyan-50 text-cyan-600 dark:bg-cyan-900/30 dark:text-cyan-300">
+<span class="material-symbols-outlined text-[20px]">graphic_eq</span>
+</div>
+<span class="text-base font-normal">Velocità parlato</span>
+</div>
+<div class="flex items-center gap-2 text-biblos-gray dark:text-gray-400">
+<span class="text-sm font-normal">Normale</span>
+<span class="material-symbols-outlined text-[20px] text-gray-300">chevron_right</span>
+</div>
+</div>
+<!-- Effects Toggle -->
+<div class="flex items-center justify-between p-4 h-14">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 rounded-lg bg-pink-50 text-pink-500 dark:bg-pink-900/30 dark:text-pink-300">
+<span class="material-symbols-outlined text-[20px]">music_note</span>
+</div>
+<span class="text-base font-normal">Effetti sonori</span>
+</div>
+<div class="relative inline-block w-11 h-6 align-middle select-none transition duration-200 ease-in">
+<input checked="" class="toggle-checkbox absolute block w-5 h-5 rounded-full bg-white border-4 border-transparent appearance-none cursor-pointer translate-x-0 checked:translate-x-full transition-transform duration-200 ease-in-out focus:ring-0 focus:ring-offset-0 outline-none" id="toggle-sfx" name="toggle" type="checkbox"/>
+<label class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer checked:bg-primary transition-colors duration-200 ease-in-out" for="toggle-sfx"></label>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Altro -->
+<section>
+<h3 class="text-biblos-gray text-xs font-bold uppercase tracking-wider px-2 pb-2">Altro</h3>
+<div class="flex flex-col bg-white dark:bg-[#1E2E24] rounded-xl shadow-soft overflow-hidden divide-y divide-gray-100 dark:divide-gray-800">
+<div class="flex items-center justify-between p-4 h-14 hover:bg-gray-50 dark:hover:bg-white/5 cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 rounded-lg bg-gray-50 text-gray-600 dark:bg-gray-800 dark:text-gray-300">
+<span class="material-symbols-outlined text-[20px]">help</span>
+</div>
+<span class="text-base font-normal">Aiuto e FAQ</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-gray-300">chevron_right</span>
+</div>
+<div class="flex items-center justify-between p-4 h-14 hover:bg-gray-50 dark:hover:bg-white/5 cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 rounded-lg bg-gray-50 text-gray-600 dark:bg-gray-800 dark:text-gray-300">
+<span class="material-symbols-outlined text-[20px]">feedback</span>
+</div>
+<span class="text-base font-normal">Feedback</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-gray-300">chevron_right</span>
+</div>
+<div class="flex items-center justify-between p-4 h-14 hover:bg-gray-50 dark:hover:bg-white/5 cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 rounded-lg bg-gray-50 text-gray-600 dark:bg-gray-800 dark:text-gray-300">
+<span class="material-symbols-outlined text-[20px]">policy</span>
+</div>
+<span class="text-base font-normal">Privacy Policy</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-gray-300">chevron_right</span>
+</div>
+<div class="flex items-center justify-between p-4 h-14 hover:bg-gray-50 dark:hover:bg-white/5 cursor-pointer transition-colors">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 rounded-lg bg-gray-50 text-gray-600 dark:bg-gray-800 dark:text-gray-300">
+<span class="material-symbols-outlined text-[20px]">description</span>
+</div>
+<span class="text-base font-normal">Termini di Servizio</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-gray-300">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Danger Zone -->
+<section class="mt-4">
+<div class="flex flex-col bg-white dark:bg-[#1E2E24] rounded-xl shadow-soft overflow-hidden divide-y divide-gray-100 dark:divide-gray-800">
+<div class="flex items-center justify-between p-4 h-14 hover:bg-red-50 dark:hover:bg-red-900/10 cursor-pointer transition-colors group">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 rounded-lg bg-red-50 text-biblos-red dark:bg-red-900/20">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+</div>
+<span class="text-base font-normal text-biblos-red font-medium">Esci</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 h-14 hover:bg-red-50 dark:hover:bg-red-900/10 cursor-pointer transition-colors group">
+<div class="flex items-center gap-3">
+<div class="flex items-center justify-center size-8 rounded-lg bg-red-50 text-biblos-red dark:bg-red-900/20">
+<span class="material-symbols-outlined text-[20px]">delete_forever</span>
+</div>
+<span class="text-base font-normal text-biblos-red font-medium">Elimina Account</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Version -->
+<div class="mt-4 mb-2 flex justify-center">
+<span class="text-biblos-gray/60 text-xs font-light">Biblos v1.0.0</span>
+</div>
+</main>
+</div>
+<script>
+        // Simple logic to keep the checkbox state consistent visually without JS frameworks
+        const toggles = document.querySelectorAll('input[type="checkbox"]');
+        toggles.forEach(toggle => {
+            toggle.addEventListener('change', function() {
+               if(this.checked) {
+                   this.nextElementSibling.classList.add('bg-primary');
+                   this.nextElementSibling.classList.remove('bg-gray-300');
+               } else {
+                   this.nextElementSibling.classList.remove('bg-primary');
+                   this.nextElementSibling.classList.add('bg-gray-300');
+               }
+            });
+            // Init state
+            if(toggle.checked) {
+               toggle.nextElementSibling.classList.add('bg-primary');
+               toggle.nextElementSibling.classList.remove('bg-gray-300');
+            }
+        });
+    </script>
