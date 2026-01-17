@@ -1,0 +1,2 @@
+127.0.0.1 - - [17/Jan/2026 17:47:29] "HEAD /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [17/Jan/2026 17:47:36] "HEAD /views/biblos_home_dashboard.html HTTP/1.1" 200 -
