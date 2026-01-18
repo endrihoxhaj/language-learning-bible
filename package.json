@@ -1,0 +1,18 @@
+{
+  "name": "biblos-app",
+  "version": "1.0.0",
+  "description": "Biblos Language Learning App",
+  "main": "index.js",
+  "scripts": {
+    "build": "python3 scripts/build_views.py",
+    "android": "npx cap open android",
+    "sync": "npm run build && npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/cli": "^6.2.0",
+    "@capacitor/core": "^6.2.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
