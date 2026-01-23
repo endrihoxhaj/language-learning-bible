@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BIBLOS Onboarding 1 of 4</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#7BA05B", // Using requested green shade for specific match
+              "primary-hover": "#6a8f4c",
+              "background-light": "#FDF6E3", // Warm cream
+              "text-dark": "#3D3426", // Dark brown for titles
+              "text-subtle": "#7A6F5D", // Lighter brown for subtitles
+              "icon-dark": "#5D4E37", // Status bar brown
+              "accent-gold": "#C9A227", // Gold for indicators
+            },
+            fontFamily: {
+              "display": ["Lexend", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "1rem",
+              "lg": "2rem",
+              "xl": "3rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        /* Custom scrollbar hide for cleaner mobile view */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light font-display text-text-dark antialiased h-screen w-full flex flex-col overflow-hidden relative">
+<!-- Status Bar Mockup -->
+<div class="w-full h-12 flex justify-between items-end px-6 pb-2 shrink-0 z-20 absolute top-0 left-0 bg-transparent">
+<div class="text-icon-dark font-semibold text-[15px] tracking-wide">9:41</div>
+<div class="flex items-center gap-1.5 text-icon-dark">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1, 'wght' 600, 'GRAD' 0, 'opsz' 24;">signal_cellular_alt</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1, 'wght' 600, 'GRAD' 0, 'opsz' 24;">wifi</span>
+<span class="material-symbols-outlined text-[18px] rotate-90" style="font-variation-settings: 'FILL' 1, 'wght' 600, 'GRAD' 0, 'opsz' 24;">battery_full</span>
+</div>
+</div>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col items-center justify-between w-full h-full pt-16 pb-10">
+<!-- Illustration Section (Top ~50%) -->
+<div class="w-full flex-1 flex flex-col justify-center items-center px-6 relative">
+<!-- Decorative circle frame background -->
+<div class="relative w-full aspect-square max-w-[340px] max-h-[340px] flex items-center justify-center">
+<!-- Image Container with circle clip -->
+<div class="w-full h-full rounded-full overflow-hidden border-[8px] border-[#8B5A2B]/10 shadow-[0_10px_40px_-10px_rgba(93,78,55,0.2)] bg-[#E8F4F8] relative">
+<!-- Sky background and main character -->
+<div class="absolute inset-0 bg-center bg-cover" data-alt="Saint Francis watercolor illustration smiling warmly with open arms surrounded by birds and flowers" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAj4uWObZqQ10ehjXwKI_IJEdm5ZrFEFpdoXPREgM0GnEnjdA6Kt_6Quc6XqxBBkrhS05o3qvLNyKT55kWkpxMmB5Tl3e861rGx_G3VIqVV_8AlXDz0jMqSSCwRlqkWw62ySc-Ersm0269g33IpaUqUPv9N1SMIwnkz3Dka8IG1rD92VK2nv0UWYfovMr5h80q5lyTuPPVEoNo4RCBqEmuUKWS3W9ALZ91BIOgT6rJk5D4ageVbc3LP1Aw-zySP1rB1UypkfWPLpbE');">
+</div>
+<!-- Overlay gradient for soft blend -->
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#FDF6E3]/30"></div>
+</div>
+<!-- Decorative elements outside the circle (simulating the wooden frame/roses described) -->
+<div class="absolute -inset-1 border-4 border-[#8B5A2B]/20 rounded-full pointer-events-none"></div>
+<!-- Floating decorative element (Bird/Leaf) -->
+<div class="absolute -top-2 -right-2 w-12 h-12 bg-[#FDF6E3] rounded-full flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[#7BA05B]" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+</div>
+</div>
+<!-- Text Content -->
+<div class="w-full px-8 text-center mt-6 mb-8 z-10">
+<h1 class="text-text-dark text-[28px] font-bold leading-tight mb-4 tracking-tight">
+                Ciao! Sono Francesco.
+            </h1>
+<p class="text-text-subtle text-[17px] font-normal leading-relaxed max-w-[280px] mx-auto">
+                Insieme impareremo una nuova lingua!
+            </p>
+</div>
+<!-- Bottom Controls -->
+<div class="w-full px-6 flex flex-col items-center gap-6 mb-safe">
+<!-- Primary CTA Button -->
+<button class="w-full h-[56px] bg-primary hover:bg-primary-hover active:scale-[0.98] transition-all duration-200 rounded-full flex items-center justify-center shadow-[0_4px_14px_rgba(123,160,91,0.4)] group">
+<span class="text-white text-[16px] font-bold tracking-wide mr-2">INIZIAMO</span>
+<span class="text-white material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform" style="font-variation-settings: 'wght' 700;">arrow_forward</span>
+</button>
+<!-- Progress Indicators -->
+<div class="flex items-center gap-3">
+<!-- Active dot (Brown filled) -->
+<div class="h-2 w-2 rounded-full bg-icon-dark"></div>
+<!-- Inactive dots (Gold outlined) -->
+<div class="h-2 w-2 rounded-full border border-accent-gold bg-transparent"></div>
+<div class="h-2 w-2 rounded-full border border-accent-gold bg-transparent"></div>
+<div class="h-2 w-2 rounded-full border border-accent-gold bg-transparent"></div>
+</div>
+<!-- Bottom Spacer to hit ~40px from bottom -->
+<div class="h-2"></div>
+</div>
+</div>
+
+<script src="/js/router.js"></script>
+<script src="/js/lesson_controller.js"></script>
+</body></html>
