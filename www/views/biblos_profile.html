@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BIBLOS User Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --bg-cream: #FDF6E3;
+            --text-dark: #3D3426;
+            --text-muted: #7A6F5D;
+            --primary-green: #6B9080;--accent-gold: #E9C46A;
+            --card-white: #FFFFFF;
+        }
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-cream);
+            color: var(--text-dark);
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased min-h-screen pb-24">
+<div class="h-12 w-full flex justify-between items-center px-6 pt-2 text-black text-sm font-medium z-10 relative">
+<span>9:41</span>
+<div class="flex gap-2 items-center">
+<span class="material-symbols-outlined text-[18px]">signal_cellular_alt</span>
+<span class="material-symbols-outlined text-[18px]">wifi</span>
+<span class="material-symbols-outlined text-[18px] rotate-90">battery_full</span>
+</div>
+</div>
+<div class="flex justify-between items-center px-4 py-2 sticky top-0 z-10 bg-[#FDF6E3]/90 backdrop-blur-sm">
+<button class="p-2 rounded-full hover:bg-black/5">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold">Profilo</h1>
+<button class="p-2 rounded-full hover:bg-black/5">
+<span class="material-symbols-outlined text-2xl">settings</span>
+</button>
+</div>
+<div class="flex flex-col items-center mt-4 mb-6">
+<div class="relative mb-3">
+<div class="w-[110px] h-[110px] rounded-full border-2 border-[var(--primary-green)] p-1 flex items-center justify-center bg-white shadow-sm">
+<img alt="Marco Rossi" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4eHGAAn0TUKGVuErhYKQi-QKENYULnI6Pcj0lEm-mPsu883JioUxbPKddl6p2ovBS4terWDpPFz2GCpFd7bAn3kuObCmu-WCs02SsINctS5g7hbJ983wKfNsvLpZP9QoHTpw8HYpSI0Y2yPDZ_CZsu2kOCujF19cvV-8-mk7Mpu0RFgzt_-kaDVhIP1YlXbY_meYfE6NKeXYC8swJLGUTKp3ShZ_fNxCglxs6UApZRYdQGj7xFEHhGY_UeoVCDml7klOinQ9_9nw"/>
+</div>
+<button class="absolute bottom-1 right-1 bg-[var(--primary-green)] text-white p-1.5 rounded-full border-2 border-[#FDF6E3] shadow-md flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+<h2 class="font-serif text-2xl text-[var(--text-dark)] mb-1">Marco Rossi</h2>
+<div class="flex items-center text-[var(--text-muted)] text-sm mb-1 gap-1">
+<span>📍</span>
+<span>Roma, Italia</span>
+</div>
+<p class="text-xs text-[var(--text-muted)] opacity-80">Iscritto da: Gennaio 2025</p>
+</div>
+<div class="px-4 mb-6">
+<div class="bg-[var(--card-white)] rounded-xl p-4 shadow-sm flex justify-between divide-x divide-gray-100">
+<div class="flex-1 flex flex-col items-center justify-center px-1">
+<span class="text-lg mb-1">🔥</span>
+<span class="font-bold text-[var(--text-dark)] text-lg leading-tight">12</span>
+<span class="text-[10px] uppercase tracking-wide text-[var(--text-muted)] font-bold text-center">Giorni<br/>Streak</span>
+</div>
+<div class="flex-1 flex flex-col items-center justify-center px-1">
+<span class="text-lg mb-1">⭐</span>
+<span class="font-bold text-[var(--text-dark)] text-lg leading-tight">1,325</span>
+<span class="text-[10px] uppercase tracking-wide text-[var(--text-muted)] font-bold text-center">XP<br/>Totali</span>
+</div>
+<div class="flex-1 flex flex-col items-center justify-center px-1">
+<span class="text-lg mb-1">📚</span>
+<span class="font-bold text-[var(--text-dark)] text-lg leading-tight">8</span>
+<span class="text-[10px] uppercase tracking-wide text-[var(--text-muted)] font-bold text-center">Lezioni<br/>Complete</span>
+</div>
+</div>
+</div>
+<div class="px-4 mb-6">
+<div class="bg-[var(--card-white)] rounded-xl p-5 shadow-sm">
+<h3 class="font-bold text-[var(--text-dark)] mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-[var(--primary-green)]">trending_up</span>
+                Il Tuo Livello
+            </h3>
+<div class="flex items-center gap-5">
+<div class="relative w-16 h-16 flex-shrink-0">
+<svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+<path class="text-gray-200" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3"></path>
+<path class="text-[var(--primary-green)]" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="65, 100" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="font-serif text-xl font-bold text-[var(--text-dark)]">A2</span>
+</div>
+</div>
+<div class="flex-1">
+<div class="flex justify-between items-end mb-1">
+<span class="font-bold text-lg">Elementary</span>
+<span class="text-xs text-[var(--primary-green)] font-bold">65%</span>
+</div>
+<div class="w-full bg-gray-100 rounded-full h-2 mb-1">
+<div class="bg-[var(--primary-green)] h-2 rounded-full" style="width: 65%"></div>
+</div>
+<p class="text-xs text-[var(--text-muted)]">Verso livello B1 (Intermediate)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="pl-4 mb-6">
+<h3 class="font-bold text-[var(--text-dark)] mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-amber-500">emoji_events</span>
+            Traguardi
+        </h3>
+<div class="flex gap-4 overflow-x-auto hide-scrollbar pb-2 pr-4">
+<div class="flex flex-col items-center gap-1 min-w-[70px]">
+<div class="w-[60px] h-[60px] rounded-full bg-green-100 border border-green-200 flex items-center justify-center text-2xl shadow-sm">
+                    🌱
+                </div>
+<span class="text-[10px] font-bold text-center text-[var(--text-muted)] leading-tight">Prima<br/>Lezione</span>
+</div>
+<div class="flex flex-col items-center gap-1 min-w-[70px]">
+<div class="w-[60px] h-[60px] rounded-full bg-orange-100 border border-orange-200 flex items-center justify-center text-2xl shadow-sm">
+                    🔥
+                </div>
+<span class="text-[10px] font-bold text-center text-[var(--text-muted)] leading-tight">7 Giorni<br/>Streak</span>
+</div>
+<div class="flex flex-col items-center gap-1 min-w-[70px]">
+<div class="w-[60px] h-[60px] rounded-full bg-blue-100 border border-blue-200 flex items-center justify-center text-2xl shadow-sm">
+                    📖
+                </div>
+<span class="text-[10px] font-bold text-center text-[var(--text-muted)] leading-tight">Unit 1<br/>Completa</span>
+</div>
+<div class="flex flex-col items-center gap-1 min-w-[70px] opacity-50 grayscale">
+<div class="w-[60px] h-[60px] rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center text-2xl shadow-inner">
+                    ⚡
+                </div>
+<span class="text-[10px] font-bold text-center text-[var(--text-muted)] leading-tight">Speed<br/>Reader</span>
+</div>
+<div class="flex flex-col items-center gap-1 min-w-[70px] opacity-50 grayscale">
+<div class="w-[60px] h-[60px] rounded-full bg-gray-100 border border-gray-200 flex items-center justify-center text-2xl shadow-inner">
+                    🗣️
+                </div>
+<span class="text-[10px] font-bold text-center text-[var(--text-muted)] leading-tight">Speaker<br/>Pro</span>
+</div>
+</div>
+</div>
+<div class="px-4 mb-8">
+<h3 class="font-bold text-[var(--text-dark)] mb-3 ml-1">Preferenze di Studio</h3>
+<div class="bg-[var(--card-white)] rounded-xl shadow-sm overflow-hidden">
+<div class="p-4 flex items-center justify-between border-b border-gray-100 active:bg-gray-50 transition-colors cursor-pointer">
+<div>
+<p class="text-xs text-[var(--text-muted)] font-bold uppercase tracking-wider mb-0.5">Lingua</p>
+<p class="font-semibold text-[var(--text-dark)] flex items-center gap-2">
+<span>🇬🇧</span> Inglese
+                    </p>
+</div>
+<span class="material-symbols-outlined text-gray-400">chevron_right</span>
+</div>
+<div class="p-4 flex items-center justify-between border-b border-gray-100 active:bg-gray-50 transition-colors cursor-pointer">
+<div>
+<p class="text-xs text-[var(--text-muted)] font-bold uppercase tracking-wider mb-0.5">Tutor Preferito</p>
+<div class="flex items-center gap-2">
+<img class="w-5 h-5 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATRBuWk0w_9HdCgFjqfoTZpFXv8rW_JI70wmKox2iDvPzWGjkobY-l1iGH-WVNOBI7nRxk4SkVhKcqffN6wfJF40a9a7U6tzHpX4RjIoe55UclV6-mAa6LdyVEQitxuGxNvvz5WTQRn1G8Xkd0xXv1e170Q7EJOZpxuRJkmXGO-jYsKdV50Z6DULnZk42X91Ew0tpRJSoTTc5InIESRmvlnXUduUj5yYAvBQcv5BSILDE7G1GpEkrxCyH-Mw_ozRvk3kCBWY_JNSw"/>
+<p class="font-semibold text-[var(--text-dark)]">Francesco</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-gray-400">chevron_right</span>
+</div>
+<div class="p-4 flex items-center justify-between active:bg-gray-50 transition-colors cursor-pointer">
+<div>
+<p class="text-xs text-[var(--text-muted)] font-bold uppercase tracking-wider mb-0.5">Obiettivo Giornaliero</p>
+<p class="font-semibold text-[var(--text-dark)]">15 min / giorno</p>
+</div>
+<span class="material-symbols-outlined text-gray-400">chevron_right</span>
+</div>
+</div>
+</div>
+<div class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 pb-safe pt-2 px-6 flex justify-between items-center z-50 h-[88px]">
+<div class="flex flex-col items-center gap-1 text-gray-400 w-16">
+<span class="material-symbols-outlined text-[24px]">home</span>
+<span class="text-[10px] font-semibold">Home</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-gray-400 w-16">
+<span class="material-symbols-outlined text-[24px]">school</span>
+<span class="text-[10px] font-semibold">Lezioni</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-gray-400 w-16">
+<span class="material-symbols-outlined text-[24px]">bar_chart</span>
+<span class="text-[10px] font-semibold">Progressi</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-[var(--primary-green)] w-16">
+<span class="material-symbols-outlined text-[24px] font-variation-settings-filled">person</span>
+<span class="text-[10px] font-bold">Profilo</span>
+</div>
+</div>
+<div class="h-[88px]"></div>
+<script>
+        // Inline CSS for material symbol variation settings to allow filled icons
+        document.head.insertAdjacentHTML("beforeend", `<style>.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; } .font-variation-settings-filled { font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24; }</style>`)
+    </script>
+
+<script src="/js/router.js"></script>
+<script src="/js/lesson_controller.js"></script>
+</body></html>

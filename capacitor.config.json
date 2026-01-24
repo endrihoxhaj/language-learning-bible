@@ -1,0 +1,6 @@
+{
+  "appId": "com.biblos.app",
+  "appName": "Biblos",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BIBLOS Lesson: User Speaking</title>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#77d425",
+                        "background-light": "#f7f8f6",
+                        "background-dark": "#192012",
+                        "cream": "#FDF6E3",
+                        "sage": "#7BA05B",
+                        "brown-text": "#3D3426",
+                        "cancel": "#D4837A",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .halo-glow {
+            box-shadow: 0 0 40px 10px rgba(255, 223, 100, 0.4);
+        }
+        .mic-pulse {
+            animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse-ring {
+            0% { box-shadow: 0 0 0 0 rgba(123, 160, 91, 0.7); }
+            70% { box-shadow: 0 0 0 20px rgba(123, 160, 91, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(123, 160, 91, 0); }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-cream dark:bg-background-dark min-h-screen flex flex-col font-display antialiased overflow-hidden text-brown-text">
+<!-- Header Section -->
+<div class="flex flex-col bg-cream dark:bg-background-dark pt-12 pb-2 px-4 sticky top-0 z-10">
+<!-- Navigation Row -->
+<div class="flex items-center justify-between mb-4">
+<button class="flex items-center justify-center p-2 rounded-full hover:bg-black/5 transition-colors text-brown-text dark:text-white">
+<span class="material-symbols-outlined" style="font-size: 24px;">arrow_back</span>
+</button>
+<h2 class="text-brown-text dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] text-center flex-1">Lezione 1: Il Panificio</h2>
+<div class="w-10"></div> <!-- Spacer for balance -->
+</div>
+<!-- Progress Indicators -->
+<div class="flex w-full flex-row items-center justify-center gap-2">
+<div class="h-2 w-2 rounded-full bg-[#e0e5dc] dark:bg-white/20"></div>
+<div class="h-2 w-2 rounded-full bg-[#e0e5dc] dark:bg-white/20"></div>
+<div class="h-2 w-2 rounded-full bg-sage dark:bg-primary"></div>
+<div class="h-2 w-2 rounded-full bg-[#e0e5dc] dark:bg-white/20"></div>
+<div class="h-2 w-2 rounded-full bg-[#e0e5dc] dark:bg-white/20"></div>
+</div>
+</div>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col items-center relative w-full max-w-md mx-auto px-4 gap-6 overflow-y-auto">
+<!-- Tutor Section (Top 40%) -->
+<div class="flex flex-col items-center justify-center w-full mt-4">
+<div class="relative">
+<!-- Golden Halo Background -->
+<div class="absolute inset-0 rounded-full bg-yellow-100/30 blur-2xl transform scale-125 z-0 animate-pulse"></div>
+<!-- Tutor Avatar -->
+<div class="relative z-10 bg-center bg-no-repeat bg-cover rounded-full h-40 w-40 border-4 border-white dark:border-white/10 shadow-lg halo-glow transition-transform duration-700 ease-in-out" data-alt="Saint Francis listening attentively with head tilted, hand to ear, warm smile and soft golden halo" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCFbruDBCmLaRlHLLvTBdPTDDKGwTesQMVN4Y637YpOOpZgeYO8WbjD9JCstCEJC_mbezcvU1FB2J0KvFb3Wb3c_gZ-CbPle1Jxo53FVoYtIGbTluxkNp6q-8yYMMxo_TKEsMrOOga0JtyY0RqqY_5o9Sc06vawRmzYZn8_TD5qD9G3-iax0hMYxwNwnklfrr_d1cohe0lDO44mcKKApBb0G-kib12sHOtHCSjdwehQkWBF3R8AqhNk4E70v0ZBP9LXIreYmc6_xPU");'>
+</div>
+</div>
+<div class="mt-4 text-center">
+<p class="text-sage dark:text-primary font-medium text-sm tracking-wide uppercase">Ti ascolto...</p>
+</div>
+</div>
+<!-- Audio Visualization & Transcription -->
+<div class="flex flex-col items-center justify-center w-full flex-1 gap-6">
+<!-- Animated Waveform -->
+<div class="flex items-center justify-center gap-2 h-[60px]">
+<div class="w-2 bg-sage dark:bg-primary rounded-full animate-[pulse_1s_ease-in-out_infinite] h-8"></div>
+<div class="w-2 bg-sage dark:bg-primary rounded-full animate-[pulse_1.2s_ease-in-out_infinite] h-12"></div>
+<div class="w-2 bg-sage dark:bg-primary rounded-full animate-[pulse_0.8s_ease-in-out_infinite] h-16"></div>
+<div class="w-2 bg-sage dark:bg-primary rounded-full animate-[pulse_1.5s_ease-in-out_infinite] h-10"></div>
+<div class="w-2 bg-sage dark:bg-primary rounded-full animate-[pulse_1.1s_ease-in-out_infinite] h-6"></div>
+</div>
+<!-- Transcription Bubble -->
+<div class="relative w-full max-w-[320px]">
+<div class="bg-white dark:bg-white/10 p-5 rounded-2xl shadow-sm border-2 border-sage/20 dark:border-primary/20 flex flex-wrap items-center justify-center min-h-[80px]">
+<p class="text-brown-text dark:text-white text-lg font-medium leading-normal text-center">
+                        Yes, I would like some bread...<span class="inline-block w-[2px] h-5 ml-1 bg-sage dark:bg-primary align-middle animate-pulse"></span>
+</p>
+</div>
+<!-- Little tail for the speech bubble pointing down towards user -->
+<div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white dark:bg-white/10 border-b-2 border-r-2 border-sage/20 dark:border-primary/20 rotate-45"></div>
+</div>
+</div>
+<!-- Bottom Controls -->
+<div class="w-full pb-10 pt-4 flex flex-col items-center gap-4">
+<!-- Active Mic Button -->
+<button class="group relative flex items-center justify-center w-[88px] h-[88px] rounded-full bg-sage hover:bg-sage/90 active:scale-95 transition-all shadow-xl mic-pulse">
+<!-- Stop Icon (Square) -->
+<div class="bg-white rounded-[4px] w-8 h-8 shadow-sm"></div>
+</button>
+<!-- Helper Text -->
+<div class="flex flex-col items-center gap-1">
+<p class="text-sage dark:text-primary font-bold text-sm tracking-wide">Rilascia per inviare</p>
+<button class="text-cancel hover:text-red-600 text-sm font-medium transition-colors px-4 py-2">
+                    Annulla
+                </button>
+</div>
+</div>
+</div>
+<script src="/js/router.js"></script>
+<script src="/js/lesson_controller.js"></script>
+</body></html>
