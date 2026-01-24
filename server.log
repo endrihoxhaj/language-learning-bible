@@ -1,0 +1,7 @@
+127.0.0.1 - - [24/Jan/2026 17:56:27] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jan/2026 17:56:28] "GET /js/router.js HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jan/2026 17:56:28] "GET /js/lesson_controller.js HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jan/2026 17:56:32] "GET /views/biblos_onboarding_1_of_4.html HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jan/2026 17:56:33] "GET /views/biblos_onboarding_2_of_4.html HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jan/2026 17:56:33] "GET /views/biblos_onboarding_3_of_4.html HTTP/1.1" 200 -
+127.0.0.1 - - [24/Jan/2026 17:56:34] "GET /views/biblos_onboarding_4_of_4.html HTTP/1.1" 200 -
