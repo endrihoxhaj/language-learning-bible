@@ -1,0 +1,8 @@
+{
+  "appId": "com.biblos.app",
+  "appName": "BIBLOS",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  }
+}
