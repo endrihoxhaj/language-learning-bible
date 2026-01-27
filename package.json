@@ -1,0 +1,13 @@
+{
+  "name": "biblos-app",
+  "version": "1.0.0",
+  "description": "Biblos Language Learning App",
+  "scripts": {
+    "build": "python3 scripts/build_views.py"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/cli": "^6.0.0"
+  }
+}
