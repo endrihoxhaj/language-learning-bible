@@ -1,0 +1,7 @@
+{
+  "appId": "io.biblos.app",
+  "appName": "BIBLOS",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "androidScheme": "https"
+}
