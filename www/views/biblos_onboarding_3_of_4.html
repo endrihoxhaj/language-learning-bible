@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BIBLOS Onboarding</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&amp;family=Playfair+Display:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7BA05B",
+                        "biblos-cream": "#FDF6E3",
+                        "biblos-brown": "#3D3426",
+                        "biblos-sub": "#7A6F5D",
+                        "background-light": "#FDF6E3",
+                        "background-dark": "#191c16",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"],
+                        "serif": ["Playfair Display", "serif"],
+                        "body": ["Nunito", "sans-serif"],
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "2xl": "1.75rem", // For the big cards
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-biblos-cream antialiased font-body">
+<div class="relative flex h-full min-h-screen w-full flex-col max-w-[480px] mx-auto bg-biblos-cream overflow-x-hidden shadow-2xl">
+<!-- Status Bar Mock -->
+<div class="flex items-center justify-between px-6 py-3 text-biblos-brown">
+<span class="text-[15px] font-semibold font-display">9:41</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">signal_cellular_alt</span>
+<span class="material-symbols-outlined text-[18px]">wifi</span>
+<span class="material-symbols-outlined text-[18px] rotate-90">battery_full</span>
+</div>
+</div>
+<!-- Progress Indicator -->
+<div class="flex w-full flex-row items-center justify-center gap-2 py-4">
+<div class="h-2.5 w-2.5 rounded-full bg-primary"></div>
+<div class="h-2.5 w-2.5 rounded-full bg-primary"></div>
+<div class="h-2.5 w-2.5 rounded-full bg-primary"></div>
+<div class="h-2.5 w-2.5 rounded-full border border-primary/50 bg-transparent"></div>
+</div>
+<!-- Hero Illustration -->
+<div class="relative flex justify-center items-center py-2 shrink-0">
+<div class="w-48 h-48 bg-contain bg-center bg-no-repeat" data-alt="Illustration of Saint Francis gently holding a small seedling plant in his hands with a warm, nurturing expression" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDtY431ECoAiYLc4Qh7j_C1ngf442b2AZwZrkbQSRpv_j0L_8-SBzlt5sID55VJLJ-Jz0DWh8owaGUp2FV1OEEoeHTkH1UYXBqTWHjMimtpQIKD4ZqKT1en1E6y-ecd845Stn7zbgH1flWJKWEaA3JA4Z6diUTFOtcqwta-NlRJmXOa8Pr1nb5mMrhgDbgpYkGwh0bupktjA5p3saVzkp1AbCMX75wGK1o7NUNiAeBZ7ssXVA7y8XEquRhyOuO2szoXxhnizdvuMqM"); mask-image: linear-gradient(to bottom, black 80%, transparent 100%); -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%); opacity: 0.9; border-radius: 999px;'>
+</div>
+<!-- Overlay to simulate the illustration style more closely if image is photo -->
+<div class="absolute inset-0 bg-biblos-cream/20 pointer-events-none"></div>
+</div>
+<!-- Main Content -->
+<div class="flex flex-col flex-grow px-6 pb-10">
+<!-- Headline -->
+<h1 class="text-biblos-brown font-serif text-[26px] font-bold leading-tight text-center pb-6 pt-2">
+                Hai già studiato inglese?
+            </h1>
+<!-- Selection Cards -->
+<div class="flex flex-col gap-3">
+<!-- Card 1: Beginner -->
+<label class="group relative flex items-center gap-4 rounded-2xl bg-white p-[18px] cursor-pointer shadow-sm border border-transparent transition-all hover:shadow-md">
+<input class="peer sr-only" name="level" type="radio" value="beginner"/>
+<div class="text-[32px] leading-none select-none">🌱</div>
+<div class="flex grow flex-col">
+<p class="text-biblos-brown font-body font-bold text-[18px] leading-tight mb-0.5">Mai studiato</p>
+<p class="text-biblos-sub font-body text-[14px] leading-tight">Parto completamente da zero</p>
+</div>
+<!-- Custom Radio UI -->
+<div class="h-6 w-6 rounded-full border-2 border-gray-300 peer-checked:border-primary peer-checked:bg-primary relative flex items-center justify-center">
+<div class="h-2.5 w-2.5 rounded-full bg-white opacity-0 peer-checked:opacity-100"></div>
+</div>
+<!-- Active State Ring (Hidden by default, shown when peer checked via sibling selector logic in parent or JS, but here using a cleaner pure CSS approach) -->
+<div class="absolute inset-0 rounded-2xl border-2 border-primary opacity-0 peer-checked:opacity-100 pointer-events-none"></div>
+<div class="absolute inset-0 rounded-2xl bg-primary/5 opacity-0 peer-checked:opacity-100 pointer-events-none"></div>
+</label>
+<!-- Card 2: Elementary (Pre-selected) -->
+<label class="group relative flex items-center gap-4 rounded-2xl bg-white p-[18px] cursor-pointer shadow-sm border border-transparent transition-all">
+<input checked="" class="peer sr-only" name="level" type="radio" value="elementary"/>
+<div class="text-[32px] leading-none select-none">🌿</div>
+<div class="flex grow flex-col">
+<p class="text-biblos-brown font-body font-bold text-[18px] leading-tight mb-0.5">Un po'</p>
+<p class="text-biblos-sub font-body text-[14px] leading-tight">Conosco le basi, qualche parola</p>
+</div>
+<div class="h-6 w-6 rounded-full border-2 border-gray-300 peer-checked:border-primary peer-checked:bg-primary relative flex items-center justify-center">
+<div class="h-2.5 w-2.5 rounded-full bg-white opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+</div>
+<div class="absolute inset-0 rounded-2xl border-2 border-primary opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity"></div>
+<div class="absolute inset-0 rounded-2xl bg-primary/5 opacity-0 peer-checked:opacity-100 pointer-events-none transition-opacity"></div>
+</label>
+<!-- Card 3: Intermediate -->
+<label class="group relative flex items-center gap-4 rounded-2xl bg-white p-[18px] cursor-pointer shadow-sm border border-transparent transition-all hover:shadow-md">
+<input class="peer sr-only" name="level" type="radio" value="intermediate"/>
+<div class="text-[32px] leading-none select-none">🌳</div>
+<div class="flex grow flex-col">
+<p class="text-biblos-brown font-body font-bold text-[18px] leading-tight mb-0.5">Abbastanza</p>
+<p class="text-biblos-sub font-body text-[14px] leading-tight">Capisco ma non parlo bene</p>
+</div>
+<div class="h-6 w-6 rounded-full border-2 border-gray-300 peer-checked:border-primary peer-checked:bg-primary relative flex items-center justify-center">
+<div class="h-2.5 w-2.5 rounded-full bg-white opacity-0 peer-checked:opacity-100"></div>
+</div>
+<div class="absolute inset-0 rounded-2xl border-2 border-primary opacity-0 peer-checked:opacity-100 pointer-events-none"></div>
+<div class="absolute inset-0 rounded-2xl bg-primary/5 opacity-0 peer-checked:opacity-100 pointer-events-none"></div>
+</label>
+<!-- Card 4: Advanced -->
+<label class="group relative flex items-center gap-4 rounded-2xl bg-white p-[18px] cursor-pointer shadow-sm border border-transparent transition-all hover:shadow-md">
+<input class="peer sr-only" name="level" type="radio" value="advanced"/>
+<div class="text-[32px] leading-none select-none">🌲</div>
+<div class="flex grow flex-col">
+<p class="text-biblos-brown font-body font-bold text-[18px] leading-tight mb-0.5">Bene</p>
+<p class="text-biblos-sub font-body text-[14px] leading-tight">Parlo già, voglio migliorare</p>
+</div>
+<div class="h-6 w-6 rounded-full border-2 border-gray-300 peer-checked:border-primary peer-checked:bg-primary relative flex items-center justify-center">
+<div class="h-2.5 w-2.5 rounded-full bg-white opacity-0 peer-checked:opacity-100"></div>
+</div>
+<div class="absolute inset-0 rounded-2xl border-2 border-primary opacity-0 peer-checked:opacity-100 pointer-events-none"></div>
+<div class="absolute inset-0 rounded-2xl bg-primary/5 opacity-0 peer-checked:opacity-100 pointer-events-none"></div>
+</label>
+</div>
+<!-- Spacer to push button to bottom if needed, but flex-col and mt-auto on button wrapper handles it -->
+<div class="flex-grow"></div>
+<!-- CTA Button -->
+<div class="mt-8 flex justify-center pb-10">
+<button class="flex w-full cursor-pointer items-center justify-center rounded-2xl h-14 bg-primary text-biblos-brown font-bold text-[16px] tracking-wide shadow-lg shadow-primary/20 transition-transform active:scale-95">
+<span>CONTINUA →</span>
+</button>
+</div>
+</div>
+</div>
+
+        <script src="/js/router.js"></script>
+        <script src="/js/lesson_controller.js"></script>
+    </body></html>
