@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html class="light" lang="it"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BIBLOS Lesson Feedback</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#78ec13",
+              "background-light": "#FDF6E3",
+              "background-dark": "#182210",
+              "biblos-gold": "#E8B84A",
+              "biblos-text-dark": "#3D3426",
+              "biblos-text-light": "#5D4E37",
+              "biblos-error-bg": "#FFE5E5",
+              "biblos-success-bg": "#E5FFE5",
+              "biblos-info-bg": "#E5F0FF",
+            },
+            fontFamily: {
+              "display": ["Lexend", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "2xl": "1rem", "full": "9999px"},
+            boxShadow: {
+                'card': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        /* Custom utilities for specific text decorations if tailwind util fails */
+        .wavy-underline {
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 4px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light text-biblos-text-dark antialiased">
+<!-- Mobile Container -->
+<div class="relative flex min-h-screen w-full flex-col overflow-hidden max-w-md mx-auto bg-[#FDF6E3]">
+<!-- Header -->
+<div class="flex items-center justify-between px-4 pt-6 pb-2 z-10 relative">
+<button class="flex size-10 items-center justify-center rounded-full hover:bg-black/5 transition-colors text-biblos-text-dark">
+<span class="material-symbols-outlined" style="font-size: 24px;">arrow_back</span>
+</button>
+<h2 class="text-biblos-text-dark text-lg font-bold leading-tight tracking-tight text-center flex-1">Lezione 4: Cibo</h2>
+<div class="flex w-10 items-center justify-center gap-1">
+<div class="w-1.5 h-1.5 rounded-full bg-biblos-text-dark"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-biblos-text-dark/40"></div>
+<div class="w-1.5 h-1.5 rounded-full bg-biblos-text-dark/40"></div>
+</div>
+</div>
+<!-- Tutor Section (Top ~35%) -->
+<div class="relative w-full h-[35vh] min-h-[260px] flex items-end justify-center">
+<!-- Illustration Placeholder -->
+<div class="w-full h-full bg-contain bg-bottom bg-no-repeat mb-[-20px] z-0" data-alt="Saint Francis in an encouraging state: gentle smile, supportive hand gesture, birds perched calmly, soft halo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC8DBQJ2irwQGvuPUt5TsoM9ruBEfRFv9rf_2_VDthdILmPdfcuySam-uesMk8u90EQDL8i-fkxzJocHoc4J3J3m0MHz_etJZGZ0tD-ktPDIEDQX4MOmFbKBCEAB9_0AsuRwok08u6Je1A6wX3mCdQmi10fGlX0C0SS_q7HVdaD-CyQD9CkcCoZj1jrcNJ9dKODNueNl_ubSOPpXp-lAKxVwbyEViNJzOxNlMeG6viPyMZz_BTJCCmvTGD286ba_AvZ1KuAyJpvaOY');">
+</div>
+</div>
+<!-- Feedback Card Container -->
+<div class="flex-1 px-5 pb-32 -mt-2 relative z-10">
+<div class="bg-white rounded-2xl shadow-card border-l-4 border-biblos-gold overflow-hidden w-full h-full">
+<div class="p-5 flex flex-col gap-6">
+<!-- Card Title & Message -->
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-3">
+<span class="text-2xl">💪</span>
+<h3 class="text-biblos-text-dark text-xl font-bold leading-tight">Quasi perfetto!</h3>
+</div>
+<p class="text-biblos-text-light text-base font-normal leading-relaxed">Great effort! Let's fix one small thing.</p>
+</div>
+<!-- Correction Logic -->
+<div class="flex flex-col gap-5">
+<!-- User Input -->
+<div class="flex flex-col gap-2">
+<span class="text-[#748961] text-xs font-semibold uppercase tracking-wider">Tu hai detto:</span>
+<div class="text-biblos-text-dark text-lg leading-snug">
+                                Yes, I would like <span class="bg-biblos-error-bg px-1.5 py-0.5 rounded text-red-800 wavy-underline decoration-red-400">a</span> bread
+                            </div>
+</div>
+<!-- Divider Arrow -->
+<div class="flex justify-start pl-6 -my-1">
+<span class="material-symbols-outlined text-biblos-gold animate-bounce" style="font-size: 24px;">arrow_downward</span>
+</div>
+<!-- Correct Form -->
+<div class="flex flex-col gap-2">
+<span class="text-[#748961] text-xs font-semibold uppercase tracking-wider">Forma corretta:</span>
+<div class="text-biblos-text-dark text-lg font-medium leading-snug">
+                                Yes, I would like <span class="bg-biblos-success-bg text-green-800 px-1.5 py-0.5 rounded font-semibold border border-green-200">some</span> bread
+                            </div>
+</div>
+</div>
+<!-- Explanation Box -->
+<div class="bg-biblos-info-bg rounded-xl p-4 flex gap-3 items-start mt-auto mb-2 border border-blue-100">
+<span class="text-lg leading-none">💡</span>
+<p class="text-blue-900/80 text-sm font-medium leading-snug pt-0.5">
+                            'Bread' è non numerabile, quindi usiamo 'some' invece di 'a'.
+                        </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Actions -->
+<div class="fixed bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-[#FDF6E3] via-[#FDF6E3] to-transparent z-20 w-full max-w-md mx-auto">
+<div class="flex gap-4 w-full">
+<!-- Secondary Button -->
+<button class="flex-1 h-14 flex items-center justify-center gap-2 rounded-xl border-2 border-primary bg-white text-primary font-bold text-base tracking-wide transition-all active:scale-95 hover:bg-gray-50 shadow-sm uppercase">
+<span class="material-symbols-outlined" style="font-size: 20px;">refresh</span>
+                    Riprova
+                </button>
+<!-- Primary Button -->
+<button class="flex-1 h-14 flex items-center justify-center gap-2 rounded-xl bg-primary text-[#141811] font-bold text-base tracking-wide shadow-lg shadow-primary/30 transition-all active:scale-95 hover:bg-primary/90 uppercase">
+                    Continua
+                    <span class="material-symbols-outlined" style="font-size: 20px;">arrow_forward</span>
+</button>
+</div>
+<!-- Bottom safe area spacing -->
+<div class="h-4"></div>
+</div>
+</div>
+
+        <script src="/js/router.js"></script>
+        <script src="/js/lesson_controller.js"></script>
+    </body></html>
