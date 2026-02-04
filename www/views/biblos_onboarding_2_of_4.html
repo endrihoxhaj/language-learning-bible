@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BIBLOS Onboarding 2 of 4</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7aae4c", // Green for selected state
+                        "biblos-cream": "#FDF6E3", // Warm cream background
+                        "biblos-brown": "#5D4E37", // Status bar icons, header text
+                        "biblos-dark-brown": "#3D3426", // Main text
+                        "biblos-light-brown": "#7A6F5D", // Secondary text
+                        "biblos-gold": "#C9A227", // Chevron
+                        "biblos-red": "#D4837A", // Coming soon badge
+                        "background-light": "#FDF6E3", // Mapping requested background
+                        "background-dark": "#191d15",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                    boxShadow: {
+                        "card": "0 2px 8px rgba(0,0,0,0.08)"
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-biblos-cream dark:bg-background-dark font-display text-biblos-dark-brown">
+<div class="relative flex h-full min-h-screen w-full flex-col overflow-x-hidden max-w-md mx-auto shadow-2xl bg-biblos-cream dark:bg-background-dark">
+<!-- Status Bar Placeholder (Visual only) -->
+<div class="h-6 w-full bg-transparent"></div>
+<!-- Top App Bar -->
+<div class="flex items-center p-4 pb-2 justify-between">
+<button class="text-biblos-brown hover:opacity-70 transition-opacity flex size-12 shrink-0 items-center justify-center -ml-2 rounded-full active:bg-biblos-brown/10">
+<span class="material-symbols-outlined text-[24px]">arrow_back</span>
+</button>
+<div class="flex w-12 items-center justify-end">
+<p class="text-biblos-light-brown text-sm font-bold leading-normal tracking-[0.015em] shrink-0">2 di 4</p>
+</div>
+</div>
+<!-- Illustration Section -->
+<div class="flex flex-col items-center justify-center pt-6 pb-2 px-6">
+<div class="relative w-40 h-40 flex items-center justify-center">
+<!-- Decorative leaf circle frame simplified -->
+<div class="absolute inset-0 rounded-full border-2 border-primary/20 scale-110"></div>
+<div class="w-full h-full bg-center bg-no-repeat bg-contain" data-alt="Saint Francis illustration in a thoughtful pose with a small bird on his shoulder inside a circular leaf frame" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDGQi9JanDngZhytK5HdCVki8RGZ2Cizd0xXZGNseZAjim5MUKzwU7YDJS-EzG8VR5BZBZ9HwhAQvvhLKyH9mkcUDSWqRpmuEXjgH3HzCAQ103vnkkIzLdCTFYBIL4egAodUG9qkWzA8pS9dJbJUvtqKyHlUKHp1VOrM6sNCHiCEFznIqIdEuS1eDn3m-4_JEnVNTqN_qd3nTaalp33j3J83bqDstx5bcrNWcUX3SMJBJbwzexG95J-THfjlomjiVkngXWTm21YT2Y"); mask-image: radial-gradient(circle, black 60%, transparent 70%); -webkit-mask-image: radial-gradient(circle, black 60%, transparent 70%); background-color: #eaddcf;'>
+</div>
+</div>
+</div>
+<!-- Headline Text -->
+<h2 class="text-biblos-dark-brown tracking-tight text-[28px] font-bold leading-tight px-6 text-center pb-6 pt-4">
+            Quale lingua vuoi imparare?
+        </h2>
+<!-- Language List -->
+<div class="flex flex-col gap-4 px-6 w-full flex-1">
+<!-- Option 1: English (Selected) -->
+<button class="relative group flex items-center gap-4 bg-white px-5 h-[72px] rounded-2xl w-full shadow-card border-2 border-primary transition-transform active:scale-[0.98]">
+<div class="text-4xl leading-none select-none">🇬🇧</div>
+<p class="text-biblos-dark-brown text-lg font-bold leading-normal flex-1 text-left">English</p>
+<div class="shrink-0 text-primary">
+<span class="material-symbols-outlined text-[28px] fill-1" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</button>
+<!-- Option 2: Italiano -->
+<button class="relative group flex items-center gap-4 bg-white px-5 h-[72px] rounded-2xl w-full shadow-card border border-transparent hover:border-primary/20 transition-all active:scale-[0.98]">
+<div class="text-4xl leading-none select-none">🇮🇹</div>
+<p class="text-biblos-dark-brown text-lg font-bold leading-normal flex-1 text-left">Italiano</p>
+<div class="shrink-0 text-biblos-gold">
+<span class="material-symbols-outlined text-[24px]">chevron_right</span>
+</div>
+</button>
+<!-- Option 3: Español (Coming Soon) -->
+<div class="relative flex items-center gap-4 bg-white px-5 h-[72px] rounded-2xl w-full shadow-card opacity-80 cursor-not-allowed">
+<div class="text-4xl leading-none select-none grayscale opacity-70">🇪🇸</div>
+<div class="flex flex-col items-start flex-1 gap-1">
+<p class="text-biblos-dark-brown text-lg font-bold leading-normal text-left opacity-60">Español</p>
+</div>
+<div class="shrink-0">
+<span class="bg-biblos-red text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">Coming soon</span>
+</div>
+</div>
+<!-- Option 4: Français (Coming Soon) -->
+<div class="relative flex items-center gap-4 bg-white px-5 h-[72px] rounded-2xl w-full shadow-card opacity-80 cursor-not-allowed">
+<div class="text-4xl leading-none select-none grayscale opacity-70">🇫🇷</div>
+<div class="flex flex-col items-start flex-1 gap-1">
+<p class="text-biblos-dark-brown text-lg font-bold leading-normal text-left opacity-60">Français</p>
+</div>
+<div class="shrink-0">
+<span class="bg-biblos-red text-white text-[10px] font-bold px-2 py-1 rounded-full uppercase tracking-wider">Coming soon</span>
+</div>
+</div>
+</div>
+<!-- Footer / Progress -->
+<div class="mt-auto pb-10 pt-6 flex justify-center w-full">
+<div class="flex gap-3">
+<div class="h-2.5 w-2.5 rounded-full bg-biblos-brown"></div>
+<div class="h-2.5 w-2.5 rounded-full bg-biblos-brown"></div>
+<div class="h-2.5 w-2.5 rounded-full border border-biblos-brown box-border"></div>
+<div class="h-2.5 w-2.5 rounded-full border border-biblos-brown box-border"></div>
+</div>
+</div>
+</div>
+
+    <script src="/js/router.js"></script>
+    <script src="/js/lesson_controller.js"></script>
+    </body>
+    </html>
